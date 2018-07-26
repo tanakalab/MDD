@@ -1,9 +1,0 @@
-<map id="cudd/cuddEssent.c" name="cudd/cuddEssent.c">
-<area shape="rect" id="node2" href="$util_8h.html" title="Low&#45;level utilities. " alt="" coords="356,155,407,181"/>
-<area shape="rect" id="node11" href="$cuddInt_8h.html" title="Internal data structures of the CUDD package. " alt="" coords="571,80,647,107"/>
-<area shape="rect" id="node13" href="$config_8h_source.html" title="config.h" alt="" coords="827,155,895,181"/>
-<area shape="rect" id="node14" href="$cudd_2st_8h.html" title="Symbol table package. " alt="" coords="431,155,475,181"/>
-<area shape="rect" id="node15" href="$cudd_2mtr_8h.html" title="Multiway&#45;branch tree manipulation. " alt="" coords="665,155,716,181"/>
-<area shape="rect" id="node16" href="$cudd_2epd_8h.html" title="The University of Colorado extended double precision package. " alt="" coords="499,155,553,181"/>
-<area shape="rect" id="node17" href="$cudd_8h.html" title="The University of Colorado decision diagram package. " alt="" coords="579,155,640,181"/>
-</map>

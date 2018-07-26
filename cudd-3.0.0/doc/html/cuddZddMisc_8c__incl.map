@@ -1,9 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node5" href="$util_8h.html" title="Low&#45;level utilities." alt="" coords="301,83,351,112"/>
-<area shape="rect" id="node23" href="$cuddInt_8h.html" title="Internal data structures of the CUDD package." alt="" coords="691,83,766,112"/>
-<area shape="rect" id="node7" href="$config_8h_source.html" title="config.h" alt="" coords="522,160,589,189"/>
-<area shape="rect" id="node27" href="$st_2st_8h.html" title="Symbol table package." alt="" coords="858,160,901,189"/>
-<area shape="rect" id="node29" href="$mtr_2mtr_8h.html" title="Multiway&#45;branch tree manipulation." alt="" coords="783,160,834,189"/>
-<area shape="rect" id="node32" href="$epd_2epd_8h.html" title="The University of Colorado extended double precision package." alt="" coords="925,160,978,189"/>
-<area shape="rect" id="node34" href="$cudd_8h.html" title="The University of Colorado decision diagram package." alt="" coords="698,160,759,189"/>
-</map>

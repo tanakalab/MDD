@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$structst__table.html" title="Symbol table header." alt="" coords="27,120,93,149"/>
-<area shape="rect" id="node4" href="$structst__table__entry.html" title="Symbol table entry." alt="" coords="5,5,109,35"/>
-<area shape="rect" id="node7" href="$structBnetNode.html" title="Node of the boolean network." alt="" coords="228,120,308,149"/>
-<area shape="rect" id="node9" href="$structDdNode.html" title="Decision diagram node." alt="" coords="183,5,252,35"/>
-<area shape="rect" id="node11" href="$structDdChildren.html" title="The two children of a non&#45;terminal node." alt="" coords="119,120,204,149"/>
-<area shape="rect" id="node16" href="$structBnetTabline.html" title="Type to store a line of the truth table of a node." alt="" coords="325,5,416,35"/>
-</map>

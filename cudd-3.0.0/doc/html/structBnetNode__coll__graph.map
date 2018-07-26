@@ -1,5 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$structDdNode.html" title="Decision diagram node." alt="" coords="13,5,83,35"/>
-<area shape="rect" id="node4" href="$structDdChildren.html" title="The two children of a non&#45;terminal node." alt="" coords="5,120,91,149"/>
-<area shape="rect" id="node9" href="$structBnetTabline.html" title="Type to store a line of the truth table of a node." alt="" coords="156,5,247,35"/>
-</map>
