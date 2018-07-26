@@ -1,0 +1,11 @@
+<map id="Capsule" name="Capsule">
+<area shape="rect" id="node2" href="$structDdManager.html" title="Specialized DD symbol table. " alt="" coords="319,381,408,408"/>
+<area shape="rect" id="node3" href="$structDdLocalCache.html" title="Local cache. " alt="" coords="97,515,204,541"/>
+<area shape="rect" id="node10" href="$structDdHook.html" title="CUDD hook. " alt="" coords="329,515,399,541"/>
+<area shape="rect" id="node4" href="$structDdLocalCacheItem.html" title="Generic local cache item. " alt="" coords="5,321,139,348"/>
+<area shape="rect" id="node5" href="$structDdNode.html" title="Decision diagram node. " alt="" coords="239,5,309,32"/>
+<area shape="rect" id="node6" href="$structDdChildren.html" title="The two children of a non&#45;terminal node. " alt="" coords="214,193,300,220"/>
+<area shape="rect" id="node7" href="$structDdSubtable.html" title="Subtable for one index. " alt="" coords="99,193,189,220"/>
+<area shape="rect" id="node9" href="$structDdCache.html" title="Computed table. " alt="" coords="325,193,401,220"/>
+<area shape="rect" id="node8" href="$structMtrNode__.html" title="multi&#45;way tree node. " alt="" coords="427,193,505,220"/>
+</map>
