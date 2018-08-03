@@ -43,6 +43,13 @@ int main(int argc, char *argv[]) /* ./MyMain RuleListFile NumberOfRules BitNumbe
   //--------------------------------------------------------------- make MTBDD from RuleList
 
   FILE *fp,*fp2;
+  int i;
+
+  char def[atoi(argv[4])+2];
+  for(i = 0; i < atoi(argv[4]);i++)
+    def[i] = '*';
+  def[i++] = '\n';
+  def[i] = '\0';
 
   if((fp = fopen(argv[1],"r")) == NULL){
     printf("RuleList file open error!!\n");
@@ -67,7 +74,7 @@ int main(int argc, char *argv[]) /* ./MyMain RuleListFile NumberOfRules BitNumbe
 
   // printf("size = %d, atoi(argv[2]) = %d, headerSize = %d, argv[5] = %d\n", size, atoi(argv[2]), headerSize, atoi(argv[5]));
 
-  int i, *headerList[headerSize],*header, bitlen = atoi(argv[4]), k = atoi(argv[2]);
+  int *headerList[headerSize],*header, bitlen = atoi(argv[4]), k = atoi(argv[2]);
   DdManager *gbm;
   DdNode *bdd,*mtbdd,*submtbdd,*tmp,*tmp2;
   DdList *terminalList,*terminalIndex,*fwdIndex;// for MDD
@@ -84,7 +91,11 @@ int main(int argc, char *argv[]) /* ./MyMain RuleListFile NumberOfRules BitNumbe
   Cudd_Ref(mtbdd);
 
   rewind(fp);
-  for(i = 1; fgets(rule,256,fp) != NULL; i++){
+  for(i = 1; i <= size+1; i++){
+    if(i != size+1)
+      fgets(rule,256,fp);
+    else
+      strcpy(rule,def);    
     terminalIndex->node = Cudd_addConst(gbm,i);
     Cudd_Ref(terminalIndex->node);
     bdd = makeDdNode(gbm,rule);
