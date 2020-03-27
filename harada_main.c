@@ -8,6 +8,7 @@
 #include "include/header.h"
 #include "include/rbt.h"
 #include <sys/time.h>
+#include <sys/resource.h>
 #include <time.h>
 
 void write_dd(DdManager* gm, DdNode *dd, char* filename) {
@@ -272,6 +273,10 @@ int main(int argc, char *argv[]) /* ./MyMain RuleListFile NumberOfRules BitNumbe
   } else {
     printf("MDD Search Time = %10ld.%09ld\n", e.tv_sec - s.tv_sec, e.tv_nsec - s.tv_nsec);
   }
+
+  struct rusage mdd_mem;
+  getrusage(RUSAGE_SELF, &mdd_mem);
+  printf("Memory Usage: %ld (kB)\n", mdd_mem.ru_maxrss); //キロバイト単位
   
   /* /\* printf("classfication time of MDD = %lf ms\n",(clatimeofmdd.tv_sec - timeofmdd.tv_sec)*1000 + (clatimeofmdd.tv_usec - timeofmdd.tv_usec)*1.0e-3 ); *\/ */
   
@@ -287,7 +292,7 @@ int main(int argc, char *argv[]) /* ./MyMain RuleListFile NumberOfRules BitNumbe
 
   /* //------------------------------------------------------------------- */
 
-  /* Cudd_Quit(gbm); */
+  Cudd_Quit(gbm);
 
   return 0;
 }
