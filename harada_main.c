@@ -253,7 +253,8 @@ int main(int argc, char *argv[]) /* ./MyMain RuleListFile NumberOfRules BitNumbe
   mdd = makeMDD(k, gbm, mtbdd);
 
   gettimeofday(&timeofmdd,NULL);
-  printf("time of making MDD = %lf s\n",(timeofmdd.tv_sec - start.tv_sec) + (timeofmdd.tv_usec - start.tv_usec)*1.0e-6 );
+  printf("time of making MDD = %lf (s)\n",(timeofmdd.tv_sec - start.tv_sec) + (timeofmdd.tv_usec - start.tv_usec)*1.0e-6 );
+  printf("The number of nodes (MDD) = %d\n", Cudd_DagSize(mtbdd));
 
   struct timespec s, e;
   clock_gettime(CLOCK_REALTIME, &s);
@@ -269,9 +270,9 @@ int main(int argc, char *argv[]) /* ./MyMain RuleListFile NumberOfRules BitNumbe
   gettimeofday(&clatimeofmdd, NULL);
 
   if (e.tv_nsec < s.tv_nsec) {
-    printf("MDD Search Time = %10ld.%09ld\n", e.tv_sec - s.tv_sec - 1, e.tv_nsec + 1000000000 - s.tv_nsec);
+    printf("MDD Search Time = %ld.%09ld\n", e.tv_sec - s.tv_sec - 1, e.tv_nsec + 1000000000 - s.tv_nsec);
   } else {
-    printf("MDD Search Time = %10ld.%09ld\n", e.tv_sec - s.tv_sec, e.tv_nsec - s.tv_nsec);
+    printf("MDD Search Time = %ld.%09ld (s)\n", e.tv_sec - s.tv_sec, e.tv_nsec - s.tv_nsec);
   }
 
   struct rusage mdd_mem;
